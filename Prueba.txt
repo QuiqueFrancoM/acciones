@@ -10,3 +10,7 @@ dfasdfasdfasdfas
 Modificando desde Nano en la Rama1
 
 Insertando letras desde VIM de BASH
+=======
+Rama2
+Comenzando de ceros
+>>>>>>> Rama2
