@@ -1,10 +1,2 @@
-Borrando desde el Block de Notas, a ver si GIT lo detecta
-
-
-
-Ya va mejorando esta version...
-dfasdfasdfasdfas
-
-Modificando desde Nano en la Rama1
-
-Insertando letras desde VIM de BASH
+Rama2
+Comenzando de ceros
