@@ -1,0 +1,35 @@
+{% extends 'acciones/base.html' %}
+{% load static %}
+{% block titulo %}Acción No. {{ id }}{% endblock %}
+{% block estilos %}
+    <link rel="stylesheet" href="{% static 'acciones/lista_acciones.css' %}"/>
+{% endblock %}
+{% block cuerpo %}
+<div class="titulo josefin-sans-franco">
+    <div><h1>Acción No. {{ id }}  ({{ accionN.titulo }})</h1></div>
+    <div><a class="enlace-discreto" href="/acciones/todas" ><h2>[Menú Acciones]</h2></a></div>
+</div>
+<div class="tabla2">
+    <div class="josefin-sans-franco">
+        <ul>
+            <li>Prioridad: {{ accionN.prioridad }}</li>
+            <li>Fecha Inicio:<b> {{ accionN.fecha_prog_inicio|date:'j F y' }}</b></li>
+            <li>Fecha Termino:<b> {{ accionN.fecha_prog_fin|date:'j F y' }}</b></li>
+        </ul>
+        {% if accionN.foto %}
+        <img id="completa" src="{{ accionN.foto.url }}" alt="{{ accionN.titulo }}" >
+        {% endif %}
+    </div>
+    <div>
+        <ul class="josefin-sans-franco">
+            <li><a href="">Orígen: {{ accionN.origen }}</a> </li>
+            <li>Creado por: <b>{{ accionN.creador }}</b></li>
+            <li>Resp.: <b>{{ accionN.responsable }}</b></li>
+            <li>Fecha Creación: <b>{{ accionN.fecha_creacion}}</b></li>
+            <li>Fecha últ. modif.: <b>{{ accionN.fecha_modificacion }}</b></li>
+            <li>{% if  accionN.terminada %}Terminada.{% else %} En proceso {% endif %}</li>
+            <p>{{ accionN.descripcion|linebreaksbr}}</p>
+        </ul>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,16 @@
+body{
+    background-color: rgba(78, 183, 201, 0.86);
+}
+.foldit-franco{
+  font-family: "Foldit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.josefin-sans-franco {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}

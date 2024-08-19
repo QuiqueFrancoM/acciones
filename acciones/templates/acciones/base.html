@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block titulo %}📆Acciones...{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'acciones/base.css' %}"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Foldit:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Foldit:wght@100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+    </style>
+    {% block estilos %}{% endblock %}
+</head>
+
+<body>
+    {% block cuerpo %}
+        <h1 class="josefin-sans-franco" align="center"> 📆 Acciones 📂  </h1>
+    {% endblock %}
+</body>
+</html>
